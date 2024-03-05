@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    ;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{                           /*making menu horizontal*/
+    display: inline-block; 
+    margin-right: 20px;
+}
+a{                                   /*changing color of menu text*/
+    text-decoration: none;
+    color: #ef6ca7;
+}
+a:hover{
+    color: #da0766;
+}
+.dropdown {
+    display: none;
+}
+
+li:hover .dropdown {
+  display: block;
+  position: absolute;
+}
+
+ul ul a {
+  color: #ef6ca7;
+}
+ul ul li{
+    display: block;
+}
+p{
+    color: #ef6ca7;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+    padding-left: 150px;
+}
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ef6ca7;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+.btn:hover{
+    background: #eb428e;
+}
+.header .row{
+    margin-top: 100px;
+}
+.new{
+    margin: 100px 100px;
+}
+.col6{
+    flex-basis: 10%;
+    padding: 10px;
+    min-width: 150px;
+    margin-bottom: 100px;
+    transition: transform 0.5s;
+}
+.col6:hover{
+    transform: translateY(-5px);
+}
+.col6 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+}
+.title a{
+    color: #000;
+    transition: color;
+}
+.title a:hover{
+    color: #ee8dcf;;
+}
+.title::after{
+    content: "";
+    background: #eb428e;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    font-weight: normal;
+}
+h5{
+    font-size: 14px;
+}
+.btn2{
+    font-size: 12px;
+    border: #ef6ca7;
+    display: inline-block;
+    background: #fff;
+    color: #ef6ca7;
+    
+    margin: 5px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/*footer*/
+.footer{
+    background: #000;
+    color: #efa6c7;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color:#efa6c7;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footercol1, .footercol2, .footercol3, .footercol4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footercol1{
+    flex-basis: 30%;
+}
+.footercol2{
+    flex: 1;
+    text-align: center;
+}
+.footercol2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footercol3, .footercol4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.applogo{
+    margin-top: 20px;
+}
+.applogo img{
+    width: 140px;
+}
+/*cart items details*/
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #ffffff;
+    background: #ef6ca7;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 100px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ef6ca7;
+    width: 100%;
+    max-width: 350px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/*account-page*/
+.account-page{
+    padding: 50px 0;
+}
+.form-container{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px #f4c4da;
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #efa6c7;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#loginform{
+    left: -300px;
+}
+#regform{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#indicator{
+    width: 100px;
+    border: none;
+    background: #eb428e;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
